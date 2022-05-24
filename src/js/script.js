@@ -9,7 +9,9 @@ const precoTotal = document.querySelector('#precoTotal')
 
 precoTotal.innerText = ""
 
+//Criando array com os valores do preco
 let soma =  listaProdutos.map(item => item.preco)
+//Somando todos os valores desse array
 precoTotal.innerText = soma.reduce((total, valor) => total + valor);
 //
 
